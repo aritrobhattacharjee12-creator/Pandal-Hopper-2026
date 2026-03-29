@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pandal Hopper 2026 | Home</title>
+
+  <!-- PWA Links -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#251a00", "on-primary-fixed-variant": "#930010", "outline": "#8f6f6c", "on-primary-fixed": "#410003", "primary": "#af101a", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffdf98", "on-surface-variant": "#5b403d", "outline-variant": "#e4beba", "surface-bright": "#fdf9f0", "surface-container-low": "#f7f3ea", "surface-container-highest": "#e6e2d9", "on-background": "#1c1c17", "surface-dim": "#dddad1", "tertiary-fixed-dim": "#eac15d", "surface-tint": "#ba1a20", "surface": "#fdf9f0", "surface-container": "#f1eee5", "primary-fixed-dim": "#ffb3ac", "on-tertiary-container": "#fff3e1", "surface-variant": "#e6e2d9", "secondary-fixed-dim": "#f8bd2a", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#5a4300", "on-primary-container": "#fff2f0", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "secondary-container": "#fec330", "on-error-container": "#93000a", "inverse-primary": "#ffb3ac", "inverse-surface": "#31312b", "on-secondary-fixed": "#261a00", "on-secondary-container": "#6f5100", "on-surface": "#1c1c17", "error": "#ba1a1a", "on-error": "#ffffff", "inverse-on-surface": "#f4f0e8", "primary-container": "#d32f2f", "background": "#fdf9f0", "on-secondary": "#ffffff", "secondary": "#795900", "primary-fixed": "#ffdad6", "secondary-fixed": "#ffdfa0", "error-container": "#ffdad6", "tertiary": "#6e5300", "tertiary-container": "#8c6b08", "on-secondary-fixed-variant": "#5c4300"
+          },
+          fontFamily: {
+            "headline": ["Epilogue"], "body": ["Plus Jakarta Sans"], "label": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 32px -4px rgba(186, 26, 32, 0.08); }
+    .glass-header { background: rgba(253, 249, 240, 0.8); backdrop-filter: blur(12px); }
+    body { min-height: max(884px, 100dvh); }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed pb-32">
+
+  <!-- TopAppBar -->
+  <header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#fdf9f0]/80 dark:bg-[#1c1c17]/80 backdrop-blur-md z-50 border-b border-[#e6e2d9]/30 dark:border-[#2c2c24] shadow-sm shadow-[#ba1a20]/5">
+    <div class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-[#af101a] dark:text-[#d32f2f] text-2xl" data-icon="temple_hindu">temple_hindu</span>
+      <h1 class="font-['Epilogue'] font-black italic text-[#af101a] dark:text-[#d32f2f] text-2xl tracking-tight">Pandal Hopper 2026</h1>
+    </div>
+    <button class="text-[#af101a] dark:text-[#d32f2f] hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+    </button>
+  </header>
+
+  <main class="pt-24 px-6 max-w-5xl mx-auto">
+    
+    <!-- Hero Section: Featured Pandal -->
+    <section class="mb-12">
+      <!-- Linked to pandal-detail.html -->
+      <a href="pandal-detail.html" class="block relative group cursor-pointer overflow-hidden rounded-xl editorial-shadow">
+        <div class="aspect-[16/10] md:aspect-[21/9] w-full bg-surface-container-highest">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Magnificent Durga Puja pandal at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS9XXKOIdDkOqLQVI0cyu6FLr3CKaREWF2TfVfSKRZEXm0rKxHZvW7yuo8AgWkVD9l1VLxpkhrSIWDZZFPTXenuANful6JGU3UsRP666QN7WIcvTlgNTi0oUUGrlOR8TRwrm8JAmYejOSepVrA_aNsVquVHQ1q6rA0R0eH6JwXTabV-pWfGxpIjhK05fCuHVowXIYezoxXVf0mmJY321AUi2Zad0c6_xD_UGIXbHvARJVqZ4VgJIpY9uj8YVdItUk4c-m-kTlrvW1s"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent flex flex-col justify-end p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-[0.2em] rounded-full">Trending Now</span>
+            <div class="flex items-center gap-1 text-white/80 text-xs">
+              <span class="material-symbols-outlined text-sm" data-icon="timer">timer</span>
+              <span class="font-label">45 min wait</span>
+            </div>
+          </div>
+          <h2 class="font-headline text-4xl md:text-5xl text-white font-bold leading-none mb-2">Maddox Square</h2>
+          <p class="text-white/70 font-body max-w-md line-clamp-2 mb-6">Experience the timeless heritage of North Kolkata's most iconic community gathering, featuring traditional *ek-chala* idol artistry.</p>
+          <button class="w-fit px-8 py-3 bg-primary text-on-primary rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/20">
+            View Details
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+          </button>
+        </div>
+      </a>
+    </section>
+
+    <!-- Quick Access Bento Grid -->
+    <section class="mb-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- All Pandals -->
+        <a href="explore.html" class="bg-surface-container hover:bg-surface-container-high transition-colors p-6 rounded-xl flex flex-col gap-4 group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-lg leading-tight">All Pandals</h3>
+            <p class="text-on-surface-variant text-xs mt-1">Browse 108+ locations</p>
+          </div>
+        </a>
+        <!-- Offline Map -->
+        <a href="offline-map.html" class="bg-surface-container hover:bg-surface-container-high transition-colors p-6 rounded-xl flex flex-col gap-4 group">
+          <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined" data-icon="map">map</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-lg leading-tight">Offline Map</h3>
+            <p class="text-on-surface-variant text-xs mt-1">Navigate without data</p>
+          </div>
+        </a>
+        <!-- Pandal Themes -->
+        <a href="themes.html" class="bg-surface-container hover:bg-surface-container-high transition-colors p-6 rounded-xl flex flex-col gap-4 group">
+          <div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined" data-icon="palette">palette</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-lg leading-tight">Themes</h3>
+            <p class="text-on-surface-variant text-xs mt-1">Art & installations</p>
+          </div>
+        </a>
+        <!-- Your Saved -->
+        <a href="saved.html" class="bg-surface-container hover:bg-surface-container-high transition-colors p-6 rounded-xl flex flex-col gap-4 group">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-lg leading-tight">Your Saved</h3>
+            <p class="text-on-surface-variant text-xs mt-1">24 Pandals tracked</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Crowd Watch Section -->
+    <section class="mb-16">
+      <div class="flex justify-between items-end mb-8">
+        <div>
+          <h2 class="font-headline text-3xl font-bold tracking-tight">Crowd Watch</h2>
+          <p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mt-1">Real-time Density status</p>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-bold text-primary">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+          </span>
+          LIVE UPDATES
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- North Kolkata -->
+        <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+          <div class="flex justify-between items-start mb-6">
+            <h4 class="font-headline text-xl font-bold">North Kolkata</h4>
+            <span class="px-3 py-1 bg-red-100 text-red-800 text-[10px] font-black rounded-full">HEAVY CROWD</span>
+          </div>
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="flex-1 h-3 bg-surface-container-highest rounded-full overflow-hidden flex gap-1 p-0.5">
+                <div class="h-full w-full bg-primary rounded-full"></div>
+                <div class="h-full w-full bg-primary rounded-full"></div>
+                <div class="h-full w-full bg-primary rounded-full"></div>
+                <div class="h-full w-full bg-primary rounded-full"></div>
+                <div class="h-full w-3/4 bg-surface-dim rounded-full"></div>
+              </div>
+              <span class="font-headline font-bold text-primary">84%</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="p-3 bg-white/50 rounded-lg">
+                <p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Avg Wait</p>
+                <p class="font-bold">120+ Mins</p>
+              </div>
+              <div class="p-3 bg-white/50 rounded-lg">
+                <p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Peak Zones</p>
+                <p class="font-bold">Bagbazar, Ahiritola</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- South Kolkata -->
+        <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+          <div class="flex justify-between items-start mb-6">
+            <h4 class="font-headline text-xl font-bold">South Kolkata</h4>
+            <span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-black rounded-full">MODERATE</span>
+          </div>
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="flex-1 h-3 bg-surface-container-highest rounded-full overflow-hidden flex gap-1 p-0.5">
+                <div class="h-full w-full bg-secondary rounded-full"></div>
+                <div class="h-full w-full bg-secondary rounded-full"></div>
+                <div class="h-full w-1/2 bg-surface-dim rounded-full"></div>
+                <div class="h-full w-full bg-surface-dim rounded-full"></div>
+                <div class="h-full w-full bg-surface-dim rounded-full"></div>
+              </div>
+              <span class="font-headline font-bold text-secondary">42%</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="p-3 bg-white/50 rounded-lg">
+                <p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Avg Wait</p>
+                <p class="font-bold">30 - 45 Mins</p>
+              </div>
+              <div class="p-3 bg-white/50 rounded-lg">
+                <p class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Clear Zones</p>
+                <p class="font-bold">Ekdalia, Ballygunge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pandal Itinerary Recommendation -->
+    <section class="mb-16">
+      <h2 class="font-headline text-3xl font-bold tracking-tight mb-8">Curated Journeys</h2>
+      <div class="flex gap-6 overflow-x-auto pb-8 snap-x no-scrollbar">
+        <!-- Journey Card 1 -->
+        <div class="min-w-[280px] md:min-w-[340px] snap-start group cursor-pointer">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden relative mb-4">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Intricate terracotta temple art style during Durga Puja" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTVGzQ8DpqmwvwJz4Iuo_f66bSIFZop51P7wK4pbTjdR_1SM_OFamLjO9xAb8FLcnn2wcmmcRIo8hjES8R1uHCAPAK4p-tGmr08P0P3hDDY7mR_sLkB25PKQrudppfnQlOPEqgCoH9lfNZwHXDaAemBpR6xm5iW5cW3zWembvahLgJGyCoTUdVGmTFcwrp3TGy8WuLa1V-wb0D9b8Ge3_16LyRlBqWBiNH5vAH_6bAgIfeUuCyxPly7kZft0B68ypySo-u0vwFwC9e"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-white/90 backdrop-blur-md text-primary text-[10px] font-bold rounded-lg shadow-sm">AUTHENTIC</span>
+            </div>
+          </div>
+          <h3 class="font-headline font-bold text-xl">The Heritage Trail</h3>
+          <p class="text-on-surface-variant text-sm mt-1">6 Pandals • North Kolkata Old Houses</p>
+        </div>
+        <!-- Journey Card 2 -->
+        <div class="min-w-[280px] md:min-w-[340px] snap-start group cursor-pointer">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden relative mb-4">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern artistic installation at a festival" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe25NVAproPHg9p7vnNQ5jdjyeB1DlPYvRmoMBWcbuKGRfbA1HGN_pHWdENEQsfQQN1EesQf9WoaP59X1dvzV-jBSosAYtiCz46DLyjY4cxZuFEqYWNyISlX52j1TV57NVgn_wSsUokmsZJJxjMYLBix2m7oAYKJlVn_bTlBbmA6HEnufikYpdK4blUBzPSyZkhxXWvs2_615SNc0ev-28zGwcGrHwBL25IGJkYqBo-kmHPdteS7tUuzPxGT2NclJMYuBn3xJFDOlp"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-white/90 backdrop-blur-md text-primary text-[10px] font-bold rounded-lg shadow-sm">AVANT-GARDE</span>
+            </div>
+          </div>
+          <h3 class="font-headline font-bold text-xl">Conceptual Wonders</h3>
+          <p class="text-on-surface-variant text-sm mt-1">8 Pandals • Modern Art Installations</p>
+        </div>
+        <!-- Journey Card 3 -->
+        <div class="min-w-[280px] md:min-w-[340px] snap-start group cursor-pointer">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden relative mb-4">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Traditional Bengali food stall at a festival" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhoipnGs1NGZpqKEAo546f1SPLmK0_DgS8xw7HSFBdfqIIyyhsuPbaUBYRQ-26s38pt01-xj6DQflPZurUWn7XNfNi0XujdheFEodEGTkqPdt2jaUOYUvuRVDEYYlcNqJXEMjIAaT4nSiqyigRRNhxdDcPY1KyUvz1GIkjNe53oUM3iHYlhesj-PIhPy2ngeJsQkd7_IlwO8B1TwqcrkQP20aKLkGrDvOp3180Af7M7dg2szU7GlKa_MOGdkCFleCNrrWZCQsTkH3-"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 bg-white/90 backdrop-blur-md text-primary text-[10px] font-bold rounded-lg shadow-sm">FOODIE</span>
+            </div>
+          </div>
+          <h3 class="font-headline font-bold text-xl">Pandal & Palate</h3>
+          <p class="text-on-surface-variant text-sm mt-1">5 Pandals • Best Street Food Stops</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BottomNavBar -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fdf9f0]/90 dark:bg-[#1c1c17]/90 backdrop-blur-xl shadow-[0_-8px_32px_rgba(186,26,32,0.08)] rounded-t-[2rem] border-t border-[#e6e2d9]/20">
+    <!-- Home (Active) -->
+    <a href="main.html" class="flex flex-col items-center justify-center text-[#af101a] dark:text-[#fec330] bg-[#d32f2f]/10 dark:bg-[#fec330]/10 rounded-xl px-4 py-2 translate-y-[-2px] transition-all duration-300">
+      <span class="material-symbols-outlined mb-1" data-icon="home_max" style="font-variation-settings: 'FILL' 1;">home_max</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Home</span>
+    </a>
+    <!-- Explore -->
+    <a href="explore.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Explore</span>
+    </a>
+    <!-- Saved -->
+    <a href="saved.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Saved</span>
+    </a>
+    <!-- Profile -->
+    <a href="profile.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Profile</span>
+    </a>
+  </nav>
+
+  <!-- FAB -->
+  <button class="fixed bottom-28 right-6 w-14 h-14 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center group active:scale-90 transition-transform z-40 border-4 border-surface">
+    <span class="material-symbols-outlined text-3xl" data-icon="near_me" style="font-variation-settings: 'FILL' 1;">near_me</span>
+  </button>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pandal Hopper 2026 - Sign In</title>
+  
+  <!-- PWA Links -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D32F2F", "on-primary": "#FFFFFF", "primary-container": "#FFDAD6", "background": "#FDF9F0", "surface": "#FDF9F0", "surface-container-low": "#F7F3EA", "surface-container-lowest": "#FFFFFF", "on-surface": "#1C1C17", "on-surface-variant": "#534341", "outline-variant": "#D8C2C0"
+          },
+          fontFamily: { "headline": ["Epilogue", "sans-serif"], "body": ["Plus Jakarta Sans", "sans-serif"], "label": ["Plus Jakarta Sans", "sans-serif"] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .alpana-gradient { background: linear-gradient(135deg, #D32F2F 0%, #AF101A 100%); }
+    body { min-height: max(884px, 100dvh); }
+  </style>
+</head>
+<body class="bg-background font-body text-on-surface min-h-screen flex items-center justify-center p-6 selection:bg-primary-container selection:text-on-primary-container">
+<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-0 overflow-hidden rounded-xl lg:rounded-3xl shadow-2xl bg-surface-container-lowest">
+  <div class="relative hidden lg:block overflow-hidden h-full min-h-[700px]">
+    <img alt="Durga Puja Pandal" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcq3ty9O3d6VcLQur9mhi81z-ojl4n4sUlWjZP8uXej525ryrlbxiDuDDwyXLf7Tmnuw9f7WQvpzoVFC6jAkNxeyIsbH_cm3Hr3knWrDFJLiy59o7Bf4G91s9s-SRfXDWVJ8wQUlHw6gp6BnKqTJC91ypcLvHq0Z-khY1Q_NW2XGacef3vQ6o2qlWnCROC-fa5_WzPK3Prbu1WW0Nbf-5jl0US_cFqhLKwlolycV_yHAJnuEWj_GxFhZxZkknHe4V_i4s0GcaP0bt"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-12 w-full">
+      <span class="font-label text-primary-container text-xs font-bold uppercase tracking-[0.2em] mb-4 block">Experience the Divine</span>
+      <h1 class="font-headline text-5xl font-black text-on-primary tracking-tighter leading-[0.9] mb-6">Explore the <br/>Heart of Bengal.</h1>
+      <p class="font-body text-on-primary/90 text-lg max-w-sm">Join thousands of pilgrims in the world's most vibrant street festival.</p>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center px-8 py-16 lg:px-20 bg-surface-container-low relative">
+    <div class="absolute top-12 left-8 lg:left-20 flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg alpana-gradient flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-xl">temple_hindu</span>
+      </div>
+      <span class="font-headline font-black text-xl tracking-tighter text-primary">Pandal Hopper 2026</span>
+    </div>
+    <div class="w-full max-w-md mx-auto">
+      <header class="mb-10 mt-12 lg:mt-0 text-center lg:text-left">
+        <h2 class="font-headline text-4xl font-black text-on-surface tracking-tighter mb-2">Welcome Back</h2>
+        <p class="font-body text-on-surface-variant">Continue your cultural journey across the city.</p>
+      </header>
+      <!-- Form redirected to main.html -->
+      <form class="space-y-6" onsubmit="event.preventDefault(); window.location.href='main.html'">
+        <div class="space-y-2">
+          <label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1" for="email">Email or Phone</label>
+          <div class="relative">
+            <input class="w-full px-5 py-4 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body" id="email" placeholder="example@gmail.com" type="text" required/>
+            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50">mail</span>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center px-1">
+            <label class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant" for="password">Password</label>
+            <a class="text-xs font-bold text-primary hover:underline transition-all" href="#">Forgot?</a>
+          </div>
+          <div class="relative">
+            <input class="w-full px-5 py-4 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body" id="password" placeholder="••••••••" type="password" required/>
+            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50">lock</span>
+          </div>
+        </div>
+        <button class="w-full alpana-gradient text-on-primary font-body font-bold text-lg py-4 rounded-lg shadow-lg shadow-primary/20 hover:shadow-xl hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+          Sign In
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </form>
+      <p class="mt-12 text-center font-body text-sm text-on-surface-variant">
+        Don't have an account? 
+        <a class="font-bold text-primary hover:underline transition-all ml-1 underline decoration-primary/20 underline-offset-4" href="signup.html">Create Account</a>
+      </p>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-1 alpana-gradient opacity-20"></div>
+  </div>
+</div>
+</body>
+</html>

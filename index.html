@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pandal Hopper 2026</title>
+  
+  <!-- PWA Links -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#FDF9F0",
+            "primary": "#D32F2F",
+            "secondary": "#795900",
+            "surface-container-lowest": "#FFFFFF",
+            "secondary-fixed": "#FEC330",
+            "on-primary": "#FFFFFF",
+            "on-surface": "#1C1C17"
+          },
+          fontFamily: {
+            "headline": ["Epilogue", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "label": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .festive-gradient { background: linear-gradient(135deg, #D32F2F 0%, #AF101A 100%); }
+    .alpana-overlay { background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50 L60 40 L50 30 L40 40 Z M50 10 L55 20 L45 20 Z M90 50 L80 55 L80 45 Z M10 50 L20 45 L20 55 Z M50 90 L45 80 L55 80 Z' fill='%23ffffff' fill-opacity='0.08'/%3E%3C/svg%3E"); }
+    .asymmetric-shape { clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%); }
+    body { min-height: 100dvh; }
+    @keyframes fadeSlideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(5deg); } }
+    @keyframes buttonPulse { 0%, 100% { box-shadow: 0 20px 40px -10px rgba(147,0,16,0.5); transform: scale(1); } 50% { box-shadow: 0 25px 50px -5px rgba(147,0,16,0.7); transform: scale(1.02); } }
+    .animate-fade-slide-up { animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-cta-pulse { animation: buttonPulse 3s infinite; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/20">
+<main class="relative min-h-screen flex flex-col items-center justify-between overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 festive-gradient asymmetric-shape"></div>
+    <div class="absolute inset-0 alpana-overlay"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface/40"></div>
+  </div>
+  <header class="relative z-10 w-full px-6 pt-12 text-center">
+    <p class="font-label text-white/80 text-[11px] uppercase tracking-[0.4em] font-bold mb-2">EST. 2026 • Kolkata Festivals</p>
+  </header>
+  <section class="relative z-10 flex flex-col items-center px-8 w-full max-w-lg">
+    <div class="relative mb-12 group animate-fade-slide-up">
+      <div class="absolute -inset-10 bg-secondary/15 blur-3xl rounded-full"></div>
+      <div class="relative w-52 h-52 md:w-60 md:h-60 bg-surface-container-lowest rounded-full flex items-center justify-center shadow-[0_32px_80px_-20px_rgba(211,47,47,0.35)] border-8 border-surface-container-lowest/50 backdrop-blur-sm">
+        <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center relative">
+          <img alt="Ma Durga" class="w-full h-full object-cover grayscale contrast-125 brightness-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcFjmTOpk8LOL2m9swabH0g0KjfCbE72_GPYVe286GoEsHSJAQ4J0v42VGKodhX63UcJE-0WEksgopGWhKj2Vu8Hofueda1UtShzSvughaMq5pWDAZQlN_Ys8N0aVzLnxDFfQflsbLuPXSZbjWm4_HvVs1dkHM2eazFA8HP-ea7HaOtQrCnQixUS_6hkjpI4ed1K988OCmA4hyHeyDnBzSW4T4EW9a5fQpDwIHJqW2DJVtRjpaNmVY-gW9MsCDmVDONjiTWqC48FBt"/>
+          <div class="absolute inset-0 bg-primary/15 mix-blend-multiply"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center space-y-4 animate-fade-slide-up" style="animation-delay: 0.2s; opacity: 0;">
+      <h1 class="font-headline font-black text-6xl md:text-7xl text-white drop-shadow-md tracking-tighter leading-[0.9]">Pandal Hopper<br/><span class="text-secondary-fixed text-5xl md:text-6xl mt-2 block">2026</span></h1>
+      <p class="font-label text-white/90 text-sm md:text-base max-w-[260px] mx-auto leading-relaxed font-semibold">Navigate the grand corridors of heritage, art, and divinity.</p>
+    </div>
+  </section>
+  <footer class="relative z-10 w-full px-6 pb-16 flex flex-col items-center gap-10">
+    <a href="login.html" class="w-full max-w-xs group relative overflow-hidden bg-primary px-8 py-5 rounded-2xl transition-all active:scale-95 duration-200 shadow-[0_20px_40px_-10px_rgba(147,0,16,0.5)] border-2 border-white/10 animate-cta-pulse flex items-center justify-center">
+      <div class="relative flex items-center justify-center gap-3">
+        <span class="font-body font-extrabold text-on-primary text-lg tracking-widest uppercase">Enter The Pandal</span>
+        <span class="material-symbols-outlined text-on-primary font-bold transition-transform group-hover:translate-x-1">east</span>
+      </div>
+    </a>
+    <div class="flex items-center gap-4">
+      <div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-primary/30"></div>
+      <div class="w-2.5 h-2.5 rounded-full bg-primary/10"></div>
+    </div>
+    <nav class="flex flex-col items-center gap-2">
+      <span class="font-label text-[10px] font-extrabold uppercase tracking-[0.2em] text-on-surface">Already have an itinerary?</span>
+      <a href="login.html" class="font-body font-extrabold text-sm hover:opacity-80 transition-opacity border-b-2 border-primary/20 pb-0.5 text-[#930010] border-primary/40 animate-cta-pulse">Sign In to Sync</a>
+    </nav>
+  </footer>
+  <div class="absolute top-6 right-6 opacity-30 pointer-events-none animate-float">
+    <span class="material-symbols-outlined text-8xl text-white" style="font-variation-settings: 'FILL' 1;">filter_vintage</span>
+  </div>
+  <div class="absolute bottom-12 left-0 p-8 opacity-5 pointer-events-none -rotate-12 animate-float">
+    <span class="material-symbols-outlined text-9xl text-primary" style="font-variation-settings: 'FILL' 1;">settings_suggest</span>
+  </div>
+</main>
+<script>
+  setTimeout(function() { window.location.href = "login.html"; }, 3500);
+</script>
+</body>
+</html>

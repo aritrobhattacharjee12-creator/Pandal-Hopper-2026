@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Pandal Hopper 2026 - User Profile</title>
+
+  <!-- PWA Links -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D32F2F",
+            "secondary": "#795900",
+            "background": "#FDF9F0",
+            "surface": "#FDF9F0",
+            "surface-container": "#F1EEE5",
+            "surface-container-low": "#F7F3EA",
+            "surface-container-high": "#ECE8DF",
+            "surface-container-highest": "#E6E2D9",
+            "surface-container-lowest": "#FFFFFF",
+            "on-surface": "#1C1C17",
+            "on-surface-variant": "#5B403D",
+            "outline": "#8F6F6C",
+            "outline-variant": "#E4BEBA",
+            "primary-container": "#D32F2F",
+            "on-primary-container": "#FFF2F0",
+            "secondary-container": "#FEC330",
+            "on-secondary-container": "#6F5100",
+          },
+          fontFamily: {
+            "headline": ["Epilogue", "sans-serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"],
+            "label": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      min-height: 100dvh;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#fdf9f0]/80 dark:bg-[#1c1c17]/80 backdrop-blur-md z-50 border-b border-[#e6e2d9]/30 dark:border-[#2c2c24] shadow-sm shadow-[#ba1a20]/5">
+  <div class="flex items-center gap-3">
+    <span class="material-symbols-outlined text-[#af101a] dark:text-[#d32f2f] text-2xl">temple_hindu</span>
+    <h1 class="font-['Epilogue'] font-black italic text-[#af101a] dark:text-[#d32f2f] text-2xl tracking-tight">Pandal Hopper 2026</h1>
+  </div>
+  <div class="flex items-center gap-4">
+    <button class="hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined text-[#af101a] dark:text-[#d32f2f]">notifications</span>
+    </button>
+  </div>
+</header>
+
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-10">
+  
+  <!-- Search Section -->
+  <section class="mb-6">
+    <div class="flex flex-col gap-6">
+      <div class="relative group">
+        <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+          <span class="material-symbols-outlined text-outline">search</span>
+        </div>
+        <input class="w-full bg-surface-container-lowest border-none rounded-xl py-4 pl-12 pr-4 shadow-[0_4px_20px_rgba(175,16,26,0.04)] focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline/60 font-medium" placeholder="Search by Pandal name or locality..." type="text"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile Header Section -->
+  <section class="flex flex-col items-center text-center space-y-6">
+    <div class="relative group">
+      <div class="absolute -inset-1 bg-gradient-to-tr from-primary to-secondary-container rounded-full blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+      <img alt="Aritra Das Profile" class="relative w-32 h-32 rounded-full border-4 border-surface-container-lowest object-cover shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCggGaAb0uwIoZVgD_ra0cIWHMzQdhY2qNIMuB90BtvM2LUJrnsHR2XVGmGeZF0VidPvDzLVkLwuWz7gAYD64OBDqot29LjFnYpDfu75F6ri7l5-6muhuE3vw-R5EzywWUKakLOpaJe9jR1zUw1N9txr_dFS_Udx0XcpC9FzHkDgmiPjm5UgVHfgXjCUBT1mCnoH3rRJP2FBMm33Fb4s76-lKvbOBkwFSUqvL5zd5jv9SzGJi7imocveAFo2evuwNIhSURFGArgVj8t"/>
+      <div class="absolute bottom-1 right-1 bg-secondary-container text-on-secondary-container p-1.5 rounded-full border-2 border-surface shadow-md">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+      </div>
+    </div>
+    <div class="space-y-2">
+      <h2 class="text-3xl font-black font-headline tracking-tight text-on-surface">Aritra Das</h2>
+      <div class="flex items-center justify-center">
+        <span class="px-4 py-1.5 bg-secondary-container text-on-secondary-container text-[11px] font-bold uppercase tracking-widest rounded-full shadow-sm">Gold Member</span>
+      </div>
+    </div>
+
+    <!-- Stats Bento Grid -->
+    <div class="grid grid-cols-2 gap-4 w-full">
+      <div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/20 text-left relative overflow-hidden group hover:border-primary/30 transition-colors">
+        <div class="absolute -right-4 -bottom-4 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity text-primary">
+          <span class="material-symbols-outlined text-8xl">temple_hindu</span>
+        </div>
+        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Pandals Visited</p>
+        <p class="text-4xl font-black font-headline text-primary mt-2">12</p>
+      </div>
+      <div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/20 text-left relative overflow-hidden group hover:border-secondary-container/30 transition-colors">
+        <div class="absolute -right-4 -bottom-4 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity text-secondary">
+          <span class="material-symbols-outlined text-8xl">route</span>
+        </div>
+        <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Kms Walked</p>
+        <p class="text-4xl font-black font-headline text-secondary mt-2">24.8</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="w-1/3 h-px bg-surface-container-highest mx-auto"></div>
+
+  <!-- Settings Options Section -->
+  <section class="space-y-4">
+    <h3 class="text-[11px] font-bold uppercase tracking-[0.25em] text-on-surface-variant/60 ml-1">Preferences & Control</h3>
+    <div class="space-y-3">
+      
+      <!-- Setting Item 1 -->
+      <button class="w-full flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/40 hover:bg-surface-container-low transition-all group shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+            <span class="material-symbols-outlined">manage_accounts</span>
+          </div>
+          <div class="text-left">
+            <p class="font-bold text-on-surface group-hover:text-primary transition-colors">Account Settings</p>
+            <p class="text-xs text-on-surface-variant">Manage your profile and security</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+      </button>
+
+      <!-- Setting Item 2 (Linked to Offline Map) -->
+      <a href="offline-map.html" class="w-full flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/40 hover:bg-surface-container-low transition-all group shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary transition-colors group-hover:bg-secondary-container group-hover:text-on-secondary-container">
+            <span class="material-symbols-outlined">offline_pin</span>
+          </div>
+          <div class="text-left">
+            <p class="font-bold text-on-surface group-hover:text-secondary transition-colors">Offline Maps</p>
+            <p class="text-xs text-on-surface-variant">3 areas downloaded (1.2 GB)</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-secondary group-hover:translate-x-1 transition-all">chevron_right</span>
+      </a>
+
+      <!-- Setting Item 3 -->
+      <button class="w-full flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/40 hover:bg-surface-container-low transition-all group shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
+          <div class="text-left">
+            <p class="font-bold text-on-surface group-hover:text-primary transition-colors">Notifications</p>
+            <p class="text-xs text-on-surface-variant">Crowd peaks & live events</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-primary group-hover:translate-x-1 transition-all">chevron_right</span>
+      </button>
+
+      <!-- Setting Item 4 -->
+      <button class="w-full flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest border border-transparent hover:border-outline-variant/40 hover:bg-surface-container-low transition-all group shadow-sm">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface-variant transition-colors group-hover:bg-on-surface group-hover:text-white">
+            <span class="material-symbols-outlined">support_agent</span>
+          </div>
+          <div class="text-left">
+            <p class="font-bold text-on-surface group-hover:text-on-surface transition-colors">Help & Support</p>
+            <p class="text-xs text-on-surface-variant">FAQs, Contact & Feedback</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant/30 group-hover:text-on-surface group-hover:translate-x-1 transition-all">chevron_right</span>
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Log Out Button -->
+  <div class="pt-6 space-y-8">
+    <button onclick="window.location.href='login.html'" class="w-full py-4 px-6 rounded-2xl border-2 border-primary/20 text-primary font-black text-xs tracking-widest uppercase hover:bg-primary hover:text-white active:scale-[0.98] transition-all">
+      Sign Out from Pandal Hopper
+    </button>
+    <p class="text-center text-[10px] text-on-surface-variant/40 font-bold tracking-widest uppercase font-label">APP VERSION 2.0.26-ALPHA</p>
+  </div>
+
+</main>
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pt-4 pb-8 rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.08)] border-t border-gray-100 bg-background">
+  <!-- Home -->
+  <a href="main.html" class="flex flex-col items-center justify-center gap-1.5 min-w-[72px] group">
+    <span class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">home</span>
+    <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 font-body group-hover:text-primary transition-colors">Home</span>
+  </a>
+
+  <!-- Explore -->
+  <a href="explore.html" class="flex flex-col items-center justify-center gap-1.5 min-w-[72px] group">
+    <span class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">explore</span>
+    <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 font-body group-hover:text-primary transition-colors">Explore</span>
+  </a>
+
+  <!-- Saved -->
+  <a href="saved.html" class="flex flex-col items-center justify-center gap-1.5 min-w-[72px] group">
+    <span class="material-symbols-outlined text-gray-500 group-hover:text-primary transition-colors">bookmark</span>
+    <span class="text-[11px] font-bold uppercase tracking-widest text-gray-500 font-body group-hover:text-primary transition-colors">Saved</span>
+  </a>
+
+  <!-- Profile (Active) -->
+  <a href="profile.html" class="flex flex-col items-center justify-center gap-1 bg-[#FFF0ED] px-6 py-4 rounded-[1.5rem] min-w-[100px]">
+    <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+    <span class="text-[11px] font-bold uppercase tracking-widest text-primary font-body">Profile</span>
+  </a>
+</nav>
+
+</body>
+</html>

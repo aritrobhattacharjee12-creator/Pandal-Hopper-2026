@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Map View - Pandal Hopper 2026</title>
+
+  <!-- PWA Links -->
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,800;0,900;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline": "#8f6f6c", "on-error": "#ffffff", "secondary-fixed": "#ffdfa0", "on-surface": "#1c1c17", "on-secondary-fixed": "#261a00", "background": "#fdf9f0", "secondary-container": "#fec330", "surface-container": "#f1eee5", "on-tertiary-fixed-variant": "#5a4300", "surface-container-low": "#f7f3ea", "surface-tint": "#ba1a20", "primary-fixed": "#ffdad6", "surface-container-highest": "#e6e2d9", "on-primary": "#ffffff", "on-primary-fixed": "#410003", "surface-bright": "#fdf9f0", "secondary-fixed-dim": "#f8bd2a", "primary-container": "#d32f2f", "outline-variant": "#e4beba", "on-primary-fixed-variant": "#930010", "tertiary": "#6e5300", "tertiary-fixed-dim": "#eac15d", "surface-dim": "#dddad1", "on-secondary-fixed-variant": "#5c4300", "surface-container-high": "#ece8df", "on-secondary-container": "#6f5100", "inverse-primary": "#ffb3ac", "error": "#ba1a1a", "on-surface-variant": "#5b403d", "tertiary-container": "#8c6b08", "primary": "#af101a", "tertiary-fixed": "#ffdf98", "surface-variant": "#e6e2d9", "error-container": "#ffdad6", "on-primary-container": "#fff2f0", "on-tertiary-container": "#fff3e1", "secondary": "#795900", "primary-fixed-dim": "#ffb3ac", "inverse-surface": "#31312b", "inverse-on-surface": "#f4f0e8", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#251a00", "on-error-container": "#93000a", "on-secondary": "#ffffff", "surface": "#fdf9f0", "on-tertiary": "#ffffff", "on-background": "#1c1c17"
+          },
+          fontFamily: {
+            "headline": ["Epilogue"], "body": ["Plus Jakarta Sans"], "label": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+    .map-texture {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuB0jV2GrmfYn1AdGoC4HetfnLdiy3NmMLlCvCoS5SbG0DY-k_y7bH_cu6dMpB3kntATdzUBzUw9mUkJpWxWJ7r6No5g0ZU19CrbUfH3LmB8Iv6YMncp2i-k6-7lrD1ctBj4TKAAgNszWDOM-KRLLCa4zx6DGYJ78tSMxuLMz2Xi09ZaW_4M0fkkAFDVK72llDl9cqbW6GzfjaLRdvqU6Rd85LlGOpfOsaaNc-66z8rST8lw-6o0rwvOGMZSfzmpO3prQtxSm2BKoZoj);
+      background-size: cover;
+      background-position: center;
+      filter: sepia(20%) contrast(90%) brightness(105%)
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed overflow-hidden h-screen flex flex-col">
+
+  <!-- Standardized TopAppBar -->
+  <header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#fdf9f0]/80 dark:bg-[#1c1c17]/80 backdrop-blur-md z-50 border-b border-[#e6e2d9]/30 dark:border-[#2c2c24] shadow-sm shadow-[#ba1a20]/5">
+    <div class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-[#af101a] dark:text-[#d32f2f] text-2xl" data-icon="temple_hindu">temple_hindu</span>
+      <h1 class="font-headline font-black italic text-[#af101a] dark:text-[#d32f2f] text-2xl tracking-tight">Pandal Hopper 2026</h1>
+    </div>
+    <button class="text-[#af101a] dark:text-[#d32f2f] hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+      <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+    </button>
+  </header>
+
+  <main class="flex-1 relative pt-16 pb-24 overflow-hidden">
+    <!-- Offline Status Banner -->
+    <div class="absolute top-2 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-3rem)] max-w-md">
+      <div class="bg-primary text-on-primary px-4 py-2 rounded-xl shadow-lg flex items-center justify-between animate-pulse">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-sm">signal_disconnected</span>
+          <span class="font-label text-xs font-bold uppercase tracking-wider">Offline Mode Active - South Kolkata</span>
+        </div>
+        <span class="text-[10px] opacity-80">Stored 4 days ago</span>
+      </div>
+    </div>
+
+    <!-- Search Bar Overlay -->
+    <div class="absolute top-16 left-1/2 -translate-x-1/2 z-30 w-[calc(100%-3rem)] max-w-lg mt-4">
+      <div class="bg-surface-container-lowest/90 backdrop-blur-md rounded-2xl shadow-xl border border-outline-variant/20 p-1 flex items-center">
+        <div class="px-3 text-secondary">
+          <span class="material-symbols-outlined">search</span>
+        </div>
+        <input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface font-body text-sm py-3" placeholder="Search offline pandals..." type="text" value="Deshapriya Park"/>
+        <button class="p-2 text-on-surface-variant hover:bg-surface-container transition-colors rounded-xl">
+          <span class="material-symbols-outlined">tune</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Map Canvas -->
+    <div class="absolute inset-0 z-0 map-texture" data-alt="detailed vintage-style illustrated map of south kolkata streets with warm parchment tones and subtle paper texture" data-location="Kolkata">
+      <svg class="w-full h-full opacity-40 pointer-events-none">
+        <path class="opacity-30" d="M0,400 Q200,380 400,450 T800,420" fill="none" stroke="#af101a" stroke-dasharray="12 8" stroke-width="6"></path>
+      </svg>
+      <!-- Pandal Marker: Ballygunge Cultural -->
+      <div class="absolute top-[45%] left-[30%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+        <div class="relative flex flex-col items-center">
+          <div class="bg-surface-container-lowest px-3 py-1 rounded-lg shadow-md border border-outline-variant/30 mb-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+            <span class="text-[10px] font-bold text-on-surface uppercase tracking-tighter">Ballygunge Cultural</span>
+          </div>
+          <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(175,16,26,0.4)] border-2 border-surface-container-lowest">
+            <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+          </div>
+        </div>
+      </div>
+      <!-- Pandal Marker: Deshapriya Park (Active) -->
+      <div class="absolute top-[65%] left-[60%] -translate-x-1/2 -translate-y-1/2 cursor-pointer scale-125 z-10">
+        <div class="relative flex flex-col items-center">
+          <div class="bg-primary text-on-primary px-3 py-1 rounded-lg shadow-md mb-2 whitespace-nowrap">
+            <span class="text-[10px] font-bold uppercase tracking-tighter">Deshapriya Park</span>
+          </div>
+          <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(175,16,26,0.6)] border-2 border-on-primary ring-4 ring-primary/20">
+            <span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+          </div>
+          <div class="absolute -bottom-2 w-4 h-4 bg-primary rotate-45 -z-10"></div>
+        </div>
+      </div>
+      <!-- User Current Location -->
+      <div class="absolute top-[35%] left-[20%] -translate-x-1/2 -translate-y-1/2">
+        <div class="relative">
+          <div class="absolute inset-0 bg-secondary rounded-full animate-ping opacity-30"></div>
+          <div class="w-6 h-6 bg-secondary rounded-full border-2 border-surface-container-lowest shadow-lg flex items-center justify-center">
+            <div class="w-2 h-2 bg-on-secondary rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation UI Overlay -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-2rem)] max-w-lg">
+      <div class="bg-surface-container-lowest rounded-3xl shadow-2xl overflow-hidden border border-outline-variant/10">
+        <!-- Trip Summary -->
+        <div class="p-5 flex items-start gap-4 border-b border-surface-variant/50">
+          <div class="bg-secondary-container p-3 rounded-2xl text-on-secondary-container">
+            <span class="material-symbols-outlined text-2xl">directions_walk</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center mb-1">
+              <h3 class="font-headline font-bold text-lg text-primary">To Deshapriya Park</h3>
+              <span class="font-label text-sm font-bold text-secondary">12 min</span>
+            </div>
+            <div class="flex items-center gap-3 text-on-surface-variant text-sm">
+              <span class="flex items-center gap-1 font-semibold">
+                <span class="material-symbols-outlined text-xs">straighten</span> 1.5 km
+              </span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1 text-primary font-medium">
+                <span class="material-symbols-outlined text-xs">offline_pin</span> Offline Data
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Turn-by-Turn Instruction -->
+        <div class="bg-surface-container-low px-5 py-4 flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-primary font-bold">south</span>
+          </div>
+          <div class="flex-1">
+            <p class="text-xs font-label uppercase tracking-widest text-secondary font-bold mb-0.5">Next Instruction</p>
+            <p class="text-on-surface font-semibold text-sm">Head South on Rashbehari Ave</p>
+          </div>
+          <div class="text-right">
+            <p class="text-lg font-headline font-black text-on-surface">350m</p>
+          </div>
+        </div>
+        <!-- Action Buttons -->
+        <div class="px-5 py-4 flex gap-3">
+          <button class="flex-1 bg-primary text-on-primary py-3 rounded-2xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+            <span class="material-symbols-outlined text-sm">navigation</span> Start Nav
+          </button>
+          <a href="offline-map.html" class="px-4 flex items-center justify-center bg-surface-container-high text-on-surface-variant py-3 rounded-2xl font-bold active:scale-95 transition-transform">
+            <span class="material-symbols-outlined">close</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Standardized BottomNavBar -->
+  <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fdf9f0]/90 dark:bg-[#1c1c17]/90 backdrop-blur-xl shadow-[0_-8px_32px_rgba(186,26,32,0.08)] rounded-t-[2rem] border-t border-[#e6e2d9]/20">
+    <a href="main.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="home">home_max</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Home</span>
+    </a>
+    <a href="explore.html" class="flex flex-col items-center justify-center text-[#af101a] dark:text-[#fec330] bg-[#d32f2f]/10 dark:bg-[#fec330]/10 rounded-xl px-4 py-2 translate-y-[-2px] transition-all duration-300">
+      <span class="material-symbols-outlined mb-1" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Explore</span>
+    </a>
+    <a href="saved.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Saved</span>
+    </a>
+    <a href="profile.html" class="flex flex-col items-center justify-center text-[#1c1c17]/50 dark:text-[#fdf9f0]/50 px-4 py-2 hover:text-[#af101a] dark:hover:text-[#fec330] transition-colors">
+      <span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+      <span class="font-['Plus_Jakarta_Sans'] font-semibold text-[11px] uppercase tracking-widest">Profile</span>
+    </a>
+  </nav>
+
+  <!-- Floating Map Controls -->
+  <div class="fixed right-6 bottom-52 flex flex-col gap-3 z-30">
+    <button class="w-12 h-12 bg-surface-container-lowest rounded-2xl shadow-lg border border-outline-variant/20 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+      <span class="material-symbols-outlined">my_location</span>
+    </button>
+    <button class="w-12 h-12 bg-surface-container-lowest rounded-2xl shadow-lg border border-outline-variant/20 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+      <span class="material-symbols-outlined">layers</span>
+    </button>
+  </div>
+
+</body>
+</html>
