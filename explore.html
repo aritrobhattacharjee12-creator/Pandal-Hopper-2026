@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pandal Hopper 2026 - 3,000+ Celebrations Directory</title>
+
+<!-- PWA Links -->
+<link href="manifest.json" rel="manifest"/>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;0,900;1,900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#251a00", "on-primary-fixed-variant": "#930010", "outline": "#8f6f6c", "on-primary-fixed": "#410003", "primary": "#af101a", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#ffdf98", "on-surface-variant": "#5b403d", "outline-variant": "#e4beba", "surface-bright": "#fdf9f0", "surface-container-low": "#f7f3ea", "surface-container-highest": "#e6e2d9", "on-background": "#1c1c17", "surface-dim": "#dddad1", "tertiary-fixed-dim": "#eac15d", "surface-tint": "#ba1a20", "surface": "#fdf9f0", "surface-container": "#f1eee5", "primary-fixed-dim": "#ffb3ac", "on-tertiary-container": "#fff3e1", "surface-variant": "#e6e2d9", "secondary-fixed-dim": "#f8bd2a", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#5a4300", "on-primary-container": "#fff2f0", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "secondary-container": "#fec330", "on-error-container": "#93000a", "inverse-primary": "#ffb3ac", "inverse-surface": "#31312b", "on-secondary-fixed": "#261a00", "on-secondary-container": "#6f5100", "on-surface": "#1c1c17", "error": "#ba1a1a", "on-error": "#ffffff", "inverse-on-surface": "#f4f0e8", "primary-container": "#d32f2f", "background": "#fdf9f0", "on-secondary": "#ffffff", "secondary": "#795900", "primary-fixed": "#ffdad6", "secondary-fixed": "#ffdfa0", "error-container": "#ffdad6", "tertiary": "#6e5300", "tertiary-container": "#8c6b08", "on-secondary-fixed-variant": "#5c4300"
+          },
+          fontFamily: {
+            "headline": ["Epilogue"], "body": ["Plus Jakarta Sans"], "label": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .alpana-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0c16.568 0 30 13.432 30 30S46.568 60 30 60 0 46.568 0 30 13.432 0 30 0zm0 5C16.193 5 5 16.193 5 30s11.193 25 25 25 25-11.193 25-25S43.807 5 30 5zm0 5c11.046 0 20 8.954 20 20s-8.954 20-20 20-20-8.954-20-20 8.954-20 20-20zm0 5c-8.284 0-15 6.716-15 15s6.716 15 15 15 15-6.716 15-15-6.716-15-15-15z' fill='%23af101a' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E"); }
+    body { min-height: 100dvh; scroll-behavior: smooth; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .primary-gradient { background: linear-gradient(135deg, #af101a 0%, #d32f2f 100%); }
+    .nav-active { @apply bg-primary/10 text-primary; }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed alpana-pattern">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#fdf9f0] z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#af101a] text-2xl" data-icon="temple_hindu">temple_hindu</span>
+<h1 class="font-headline font-black italic text-[#af101a] text-2xl tracking-tight">Pandal Hopper 2026</h1>
+</div>
+<button class="text-[#af101a] hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="pt-24 pb-48 px-6 max-w-7xl mx-auto space-y-24">
+<!-- Hero Section -->
+<section class="max-w-2xl mx-auto text-center space-y-8">
+<div>
+<span class="font-label text-sm uppercase tracking-[0.2em] text-secondary font-bold mb-2 block">The Ultimate Encyclopedia</span>
+<h2 class="text-4xl sm:text-7xl font-black font-headline text-on-surface leading-tight">Explore 3,000+ Celebrations</h2>
+<p class="text-on-surface-variant mt-2 font-medium">Navigating the heart of Bengal's greatest festival with real-time wait times and heritage guides.</p>
+</div>
+<div class="flex flex-col gap-6 text-left">
+<!-- Search Bar -->
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl py-5 pl-12 pr-4 shadow-[0_4px_30px_rgba(175,16,26,0.1)] focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline/60 font-medium text-lg" placeholder="Search by Pandal, Zone, or Theme..." type="text"/>
+</div>
+<!-- Quick Stats -->
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low rounded-2xl border border-outline-variant/30">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-black text-on-surface-variant tracking-widest">Active Now</span>
+<span class="text-xl font-black text-primary">3,042 Locations</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/50"></div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase font-black text-on-surface-variant tracking-widest">Live Crowds</span>
+<span class="text-xl font-black text-secondary">High Density</span>
+</div>
+<button class="flex items-center gap-2 text-primary font-black bg-primary/5 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-lg" data-icon="tune">tune</span>
+<span class="text-xs uppercase tracking-widest">Filters</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Spotlight -->
+<section>
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline text-4xl font-black text-on-surface">The 2026 Elite</h3>
+<p class="text-on-surface-variant text-lg font-medium">Curated selection of the season's grandest spectacles</p>
+</div>
+<button class="text-primary font-bold text-sm uppercase tracking-[0.2em]">View Map</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer group relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/10">
+<img alt="Baghbazar Sarbojanin" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCngFhdOlEkB3tNnLsSInhvdeMwdphK8zYgmm_7_eQp4YFQ4Log5vKgd_drNhrjXhUjtC-Zhg3GlFVH8z4wt2zs3sgJS2N0Y0m61hubD3ZimIrAJJhqLBmY-wjYosjMcgPMTz5hilGMhk60eO8wVfAoDNM2Z1e_vMgcLtsHbZ9r-YScGBulGvnSNA2RdkkpZJYbzLCogc3RVyC2WpOZNtb7lsvnnCKB6mRxhMzLgRoZb6Dk1OLoNty1pJhg2amUlMxpL4LBYfFVZYc1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 text-white">
+<span class="bg-secondary px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest mb-3 inline-block">Trending #1</span>
+<h4 class="text-4xl font-black font-headline mb-2">Baghbazar Sarbojanin</h4>
+<p class="text-lg opacity-80 font-medium">North Kolkata • Traditional Ekchala Protima</p>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer group relative aspect-[16/9] rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/10">
+<img alt="Sreebhumi Sporting" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhM3TTg5lkFNB9W6HNFpVMPAeXo01-cBCXDgwknWsRmLXL2iCjFx_9k2ZoXp8zv_oR_8XALO6wGC6xxzFFS86qjDWslh1nq6k1Z_1X12jrnc6egsudKiuZ0VZACTuJ7_rjnFEEQci8I4lFFhgh1JuqTtI_n_yNgJOGnK36jYtoFD8vePvX6t_kMBwqMKW_7Bof63N5efuZm09tli8kW0KswqM3zAOL15uDkT-TrRs4ULQsYFNL7DXDRZRzAOfmyFNviw9Tn-QnjGPO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 text-white">
+<span class="bg-primary px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest mb-3 inline-block">Artistic Pick</span>
+<h4 class="text-4xl font-black font-headline mb-2">Sreebhumi Sporting</h4>
+<p class="text-lg opacity-80 font-medium">Lake Town • The Royal Vatican Theme</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Comprehensive Regional Directory -->
+<!-- North Kolkata -->
+<section class="space-y-10" id="north">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-6">
+<h3 class="font-headline text-4xl font-black text-on-surface">North Kolkata <span class="text-primary font-normal italic text-2xl">850+ Locations</span></h3>
+<a class="text-primary font-black text-sm uppercase tracking-widest" href="#">Explore All North</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest p-5 rounded-[2.5rem] border border-outline-variant/20 hover:shadow-2xl transition-all group">
+<div class="aspect-[3/4] rounded-[2rem] overflow-hidden relative mb-6">
+<img alt="Ahiritola Sarbojanin" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGNIrPGVHNwW_Xq-xu_SJ8FxDV1U98vIafshMmRAhZYpP1GW0xvb6Sd_qZLS6A3-8IR2wNfcIR7Rpna90ie8IROq78B_VvmGhEnKEpTd55nh8iaxVc2EHcpX2XhDs2Rb_RRsAUEskUX13vq-_Cyp-t1rcQXJIPiov3sxV4oXFRGtZF1i2Ftn_wBcE7jq527YnWZCx8NC-nqiW916F4_ZJ2i77bHjAMNi1ief_8Xvb4uOv1_VhRVqb0onzjVv_ADgo5bZnmxQy7xEl1"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-2 py-1 rounded-lg text-xs font-black">4.9 ★</div>
+</div>
+<h5 class="font-black text-xl mb-1">Ahiritola Sarbojanin</h5>
+<p class="text-sm text-on-surface-variant font-bold uppercase tracking-wider text-[10px]">Shobhabazar • 120 Years</p>
+<div class="mt-6 pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="text-xs font-black text-primary uppercase tracking-widest flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> 20m wait</span>
+<button class="text-primary font-black text-[10px] uppercase tracking-widest hover:underline">Details</button>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest p-5 rounded-[2.5rem] border border-outline-variant/20 hover:shadow-2xl transition-all group">
+<div class="aspect-[3/4] rounded-[2rem] overflow-hidden relative mb-6">
+<img alt="Kumartuli Park" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSHemR1ElFjWtvNqAjEpECrbCZBMY4spsaHm9boalGL2pwXlPiCamzsLYagvb7eHMTS8R5LKLqUMHcfwo4IeOY9Wu3Z_IB5jKKQ3T6hGcp1vbaCVxASgqfMmq89AumUC5_GLQNNNyctOZ-fMmIdNgjt6sW9KmpbVrr7RY8guWAn-MFPwJWArVSSx44rntv4LB4-v_3DZTvHX9eNW_aCVOJGVzoZXNONEPUWofEpjujOlknh8HusCEDqA_FokbVlFZkx56ahR6OLxLM"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-2 py-1 rounded-lg text-xs font-black">4.7 ★</div>
+</div>
+<h5 class="font-black text-xl mb-1">Kumartuli Park</h5>
+<p class="text-sm text-on-surface-variant font-bold uppercase tracking-wider text-[10px]">North Kolkata • Artist Colony</p>
+<div class="mt-6 pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="text-xs font-black text-secondary uppercase tracking-widest flex items-center gap-1">Fast Entry</span>
+<button class="text-primary font-black text-[10px] uppercase tracking-widest hover:underline">Details</button>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest p-5 rounded-[2.5rem] border border-outline-variant/20 hover:shadow-2xl transition-all group">
+<div class="aspect-[3/4] rounded-[2rem] overflow-hidden relative mb-6">
+<img alt="Hati Bagan Nabin Pally" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDMZFipXY39DN2H4AuRRm_OdKIJZ52zVVUzlF1C9hcxJbcL9FCad-oF2dLnH-N_HQLR0eurIrPUi7TZWLm2XWUKwasZySSVPHeWcurYpI2PI3b5fKkQs_erh3dAuWQVffNh190P1sy_70zN1AytjEiiKNYdHdJgodBsvhUe3TJ18KRfntBWDH4JiAco5iIHUZNVXzxN0YULIcp4WkYt1aKUhq930ucsgIWeX9qdhP2r8OFlmLd-l9s_WQUwOfFqp6hcomfBvOdnV8-"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-2 py-1 rounded-lg text-xs font-black">4.8 ★</div>
+</div>
+<h5 class="font-black text-xl mb-1">Hati Bagan Nabin Pally</h5>
+<p class="text-sm text-on-surface-variant font-bold uppercase tracking-wider text-[10px]">Shyambazar • Concept Art</p>
+<div class="mt-6 pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="text-xs font-black text-primary uppercase tracking-widest flex items-center gap-1">45m wait</span>
+<button class="text-primary font-black text-[10px] uppercase tracking-widest hover:underline">Details</button>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest p-5 rounded-[2.5rem] border border-outline-variant/20 hover:shadow-2xl transition-all group">
+<div class="aspect-[3/4] rounded-[2rem] overflow-hidden relative mb-6">
+<img alt="Dum Dum Park Tarun Sangha" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0_vzP1jlmYFCL54UZ6kR-MNcG0qfhEuhqIOox4sKNerhwQR_-t7PTR0DBsxG9hlBrCrzk9PnW1vD0tWfubulNIogKlAai0FvfD6KCu-SHMIbz5sV0WumQz5Efj7ezHLN9Sf3g9TACdw1FHcxNdqzLP72YCQWHKz-VboJSyybpoFs5CYEFQ0YZsHurccikPAicOxSl58wDqqjsqoegzuqD_GKhXGW35IUJetAzchf8AT9utxnbGW9e-dM8UPkbRXIDshrZ0ht9O8p8"/>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary px-2 py-1 rounded-lg text-xs font-black">4.6 ★</div>
+</div>
+<h5 class="font-black text-xl mb-1">Dum Dum Park Tarun Sangha</h5>
+<p class="text-sm text-on-surface-variant font-bold uppercase tracking-wider text-[10px]">Nagerbazar • Artistic Excellence</p>
+<div class="mt-6 pt-6 border-t border-outline-variant/10 flex justify-between items-center">
+<span class="text-xs font-black text-primary uppercase tracking-widest flex items-center gap-1">30m wait</span>
+<button class="text-primary font-black text-[10px] uppercase tracking-widest hover:underline">Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- South Kolkata -->
+<section class="space-y-10" id="south">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-6">
+<h3 class="font-headline text-4xl font-black text-on-surface">South Kolkata <span class="text-primary font-normal italic text-2xl">1,200+ Locations</span></h3>
+<a class="text-primary font-black text-sm uppercase tracking-widest" href="#">Explore All South</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-lg border border-outline-variant/10 group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Ekdalia Evergreen" class="w-full h-full object-cover transition-transform group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCycd24YRhmYKl338RAnvCkzwlJ0R0XnAbWgWxdqW_P82f2cv5g5ASSZ31RZPVr3mRkMNpoAHykXBcBNWDvUlbm12qsyVTyHPI4pJ8kULrmk3QHl6hfKoSuT0eici-uS5ty8FCbWmeMFRdDn6YbpTNTji2kZtgZYA3V6OUT7fvksTE4oGkg2Lisrz_o_VbWtVFZv-lt_zvmvyXDE7oQmFfa9JR3LLlzzvAnjGRHPTuq0UJ2Bj8WnZtqM34IetskuYtm7QB3m7dzKAi5"/>
+<div class="absolute bottom-6 left-6 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Mega Pandal</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-2">
+<h5 class="font-black text-2xl">Ekdalia Evergreen</h5>
+<span class="text-lg font-black text-secondary">4.8 ★</span>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">Gariahat • World Famous Chandelier</p>
+<div class="mt-8 flex gap-3">
+<button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/dir/?api=1&destination=Ekdalia+Evergreen+Club', '_blank');" class="flex-1 primary-gradient text-on-primary py-4 rounded-2xl text-sm font-black flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">near_me</span> Route
+            </button>
+<button onclick="event.stopPropagation();" class="w-14 h-14 border border-outline-variant/30 rounded-2xl flex items-center justify-center text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-lg border border-outline-variant/10 group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Maddox Square" class="w-full h-full object-cover transition-transform group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmVm5Mftwlnq3_Mmx2Xr0cb3GuxlnrH4z8V12ytKptoxi1m7axnAZKZrl584sWquOgoAL-on7lpy5ScIP_THWRc0mp0woisPNOv_K5ReIXNZH_fcnExEVG8ho9w-gaBm-e2eKLH7Vz3AF8UDdAEg5YzdWVNEixcLFEwPQnOwhJKyyixuWq-xOOghT7jaHjCgHrWR3HZ-X2nKwSPB6RG2fcDwrhMMm91D2JBAwNzMXP-f9yD0TWLcGDHn9FYzNcPuBxsARoMIxqzYnV"/>
+<div class="absolute bottom-6 left-6 bg-secondary text-on-secondary text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Public Favorite</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-2">
+<h5 class="font-black text-2xl">Maddox Square</h5>
+<span class="text-lg font-black text-secondary">4.9 ★</span>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">Ballygunge • The Cultural Hub</p>
+<div class="mt-8 flex gap-3">
+<button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/dir/?api=1&destination=Maddox+Square', '_blank');" class="flex-1 primary-gradient text-on-primary py-4 rounded-2xl text-sm font-black flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">near_me</span> Route
+            </button>
+<button onclick="event.stopPropagation();" class="w-14 h-14 border border-outline-variant/30 rounded-2xl flex items-center justify-center text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-lg border border-outline-variant/10 group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Suruchi Sangha" class="w-full h-full object-cover transition-transform group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuR9ceBNYSOJ5EfeW0NZX9Vxy-oePFjlYsI1XdCSGvq-crX8l_zkBr-Xf2m9Meg8RFA3G-rJFJq1QJTp_viRpDCmu8XfhQyrHsgyjFp9wxA4_MvStQwTuX4mhRZphJHnh3dVANokYHTErqYVRGud8kZXNIPuNPJcyz6ApWz2-D7-z_eRYcm3PxbXH6nF07BcIKFiWAqWYa5uufpVj2AZ1RpyWNgeUjyscPlqTFeIqWdoLaeyCLrDCbEOPJvteZCTiUo4jHUISdadMa"/>
+<div class="absolute bottom-6 left-6 bg-tertiary-container text-on-tertiary-container text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Gold Winner</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-2">
+<h5 class="font-black text-2xl">Suruchi Sangha</h5>
+<span class="text-lg font-black text-secondary">5.0 ★</span>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">New Alipore • Intricate Craftsmanship</p>
+<div class="mt-8 flex gap-3">
+<button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/dir/?api=1&destination=Suruchi+Sangha', '_blank');" class="flex-1 primary-gradient text-on-primary py-4 rounded-2xl text-sm font-black flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">near_me</span> Route
+            </button>
+<button onclick="event.stopPropagation();" class="w-14 h-14 border border-outline-variant/30 rounded-2xl flex items-center justify-center text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-lg border border-outline-variant/10 group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Deshapriya Park" class="w-full h-full object-cover transition-transform group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9twAaftjFVexTv-3CwXZu7VBe6getsWebp0AUC7qaXazvK7kget8kKHz4FiQBrSFM4ZaLyATixIzrwbYKWoxNLDK4bsT1-cs8mebeqE7LkQwyDWgdu8HeMop1D_-yrY-KkH_xIRljlDrY4uf0y41nypMd4AwoTHdCISNOqJBri4AXup8P35zvLNYf--dbwV3gdZ9EsBB83cxfKgz_EL1aHkEvR7TXYppk6WaOBUCMO6XwguAtyPuz__ZcQQSFl5AXa-eWrEJ6cEat"/>
+<div class="absolute bottom-6 left-6 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Grand Scale</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-2">
+<h5 class="font-black text-2xl">Deshapriya Park</h5>
+<span class="text-lg font-black text-secondary">4.7 ★</span>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">Rashbehari • Massive Structures</p>
+<div class="mt-8 flex gap-3">
+<button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/dir/?api=1&destination=Deshapriya+Park', '_blank');" class="flex-1 primary-gradient text-on-primary py-4 rounded-2xl text-sm font-black flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">near_me</span> Route
+            </button>
+<button onclick="event.stopPropagation();" class="w-14 h-14 border border-outline-variant/30 rounded-2xl flex items-center justify-center text-primary hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Central & East Kolkata -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="space-y-10">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-6">
+<h3 class="font-headline text-3xl font-black text-on-surface">Central Kolkata</h3>
+<span class="text-xs font-black text-on-surface-variant bg-surface-container px-3 py-1 rounded-full uppercase tracking-widest">420+ Locations</span>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="College Square" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI2y9-jNJtGosZcboj4xWRip-r7Q1ozl1LNLHxpzTVnFAJikpLrLPKKx-HvNsP79CRVqQ6ZFyOF0EZ_tMrDVs3384ptPmsnyBAH5kBgwHhd_AMKwr9uUAdhX0r95tqmFslQ0KBqWHlvSrtcyQVc6xgzHCopzYXBZKbSG4-Kj5YbdvqIqW-HrPu2kYuAvktM3xHRjakujzKi0MrNMi5BE2uUzkT2rCHLrlxvs8T8ny9vpVlVrat2m1dU0jiyxvQuCA9ueE4Uv7E6J0-"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">College Square</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">MG Road • 4.9 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Famous for Water Lighting</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="Mohammad Ali Park" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvAmdFyRZw3rEcB84xdd1lSypornZgygF58c2Iwr04fayD0hia_d7UF5joEEeNce2AA6kRCRwp3HWqIGFF0IaNGhZTYGHj_NxpYkSZ60xBGVL_uh6hpKvdWnvAcBgr-ojO_UsqdxwOXFU_qEakozx_a_cxcaj7ECiCHRpQofeE4WI9eKQ4CmQ3FJGHZ-nKYQpMCu2EsokQvWd_N0TOvAcDkajxSf3TrgSIG60U_RQdxmG1q-FSCt9uz3KpG0OKN_TjQha8YGZSQbXd"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">Mohammad Ali Park</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">Central Kolkata • 4.8 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Historic Sports Club Venue</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="Santosh Mitra Square" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAwQzo6Ul2dFrvIuBuYLccpVY_pprFUk1K04n1ATstV2XXLWUwe4MPvCzz2PqmAXN3QdAGL3ST8h6eit4UbQ9fAPJTFtUOt2I_W9v6rObx9UPzUPuGgx9AbfxxUGpMcT2se9VK2KAyKhvMVwPIW0VBkVeuG8DQS0KqITayCUoGPgzJH7uL7Hc1z_PqORUDVnv-N-Ux2DK-x-9oKhkft6RvHSQRozG5GoaoaQfNgnaIikoEwJDOkxq1Z8w5uAh-ZvFfPzXK06kIWpH_"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">Santosh Mitra Square</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">Lebutala • 4.9 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Extravagant Theme Specialists</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+</div>
+</div>
+<div class="space-y-10">
+<div class="flex items-center gap-4 border-b border-outline-variant/30 pb-6">
+<h3 class="font-headline text-3xl font-black text-on-surface">East Kolkata</h3>
+<span class="text-xs font-black text-on-surface-variant bg-surface-container px-3 py-1 rounded-full uppercase tracking-widest">350+ Locations</span>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="FD Block" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjyKalrhWmhMD5VPJOf-0m2Rg8njV0iwrVAl0AfnW7vBTG44fMfs1meJTi2m9YbcS4teWMQ8OhsUfQ-lsdclOhaUnP9AVB0CX-8oLhqLTLsx87Ulh0kP5rrRAWhYQ9EUS-p4g2DNdoL41xUi2epyvw2jRIxEDDmclDrhqo_RNIWk4vAU_AyxrP9TLcG6fMNdiQScKCNvc9WLgzEBAFVz_MgSZssptnoBCmrx9ysOVhkNFZMVEUcWkoZDlvpnWqlLmzkFQj8iYgKqW0"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">FD Block Sarbojanin</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">Salt Lake • 4.8 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Best Neighborhood Decor</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="AK Block" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC23TF68Kcfr27n7V4t8jlIFg91dtRQ0P8xWT-C0Cx5BOa-TCm71oEPDcMUa7FXad60k3qjenFvqBQhfR6Uuisqg4ECBkq7mtUUpZpKzDucB92GczMw5FkxD2XTvq0uCOMx7MPJSfPL-RIAGXnjWSsqQqrd3KT2qyfgUIyMdmEYeAUyH_ZoGpawrln84orDXUekUpDDcs9DkOm0S9USiRHSVmH14n0xerG5X5LwBQfPQAFZEofYJnKvx8laInlVgqihpMXiXlH5TS5F"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">AK Block Sarbojanin</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">Salt Lake • 4.6 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Contemporary Artistic Focus</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="cursor-pointer flex gap-6 bg-surface-container-lowest p-4 rounded-3xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+<img alt="BJ Block" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvkmcagoX6VPCV6pZv1riYAHzziQne2N0_kylaIM_4ZH3bRV6-BqihkZp6zMeULo8b8mYaVlrNgull_CL8dbVRb0JTfFpiHRDSrNUJHzVU2hKozk5VWxOY9GynU0MaxjeYOIMeynAaUIFlxqH6f1Frf0Sixr9nFzlvuiKEC6NLjKXCg5zz2V0SYvnT4YohNsbuu9weWsZZhXE7FmtVIi6nyGEpr3IXxANNOnCqvUf4bmyMNmF6oKR6tCRpySNVfowTGkKg1uQKy3ys"/>
+</div>
+<div class="flex flex-col justify-center flex-1">
+<h6 class="font-black text-lg">BJ Block Sarbojanin</h6>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest mt-1">Salt Lake • 4.7 ★</p>
+<p class="text-[10px] text-primary font-black mt-2">Traditional Ritual Excellence</p>
+</div>
+<button onclick="event.stopPropagation();" class="self-center px-4 py-2"><span class="material-symbols-outlined text-outline">bookmark</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Suburbs & West -->
+<section class="space-y-12">
+<div class="flex items-center gap-6">
+<h3 class="font-headline text-4xl font-black text-on-surface">Suburbs &amp; West</h3>
+<div class="h-1 flex-grow bg-primary/10 rounded-full"></div>
+<span class="text-sm font-black text-primary bg-primary/5 px-4 py-2 rounded-xl">210+ Locations</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Behala Nutan Dal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCbm5r7UeDZ_dOOLcWjLxLTiIaF4Jhb6YpDtNJgzqxydE2_Gdy-ZSblNgiDzTRwGgSPWzS2Pz1Nf8Td8h8F5he_iiN42K-pHNYpN6TZKAAX3LKgPAx2Ds8eAVuyNj9PPoQ11b16tOF1RBykbCyZ9gukHKbEfxlhURmO0dRkPIPKbqleL-rrqQ1dPbDT4LTcZez5nI5h1YEHsqi8fSwHuCflldJtNGSZtUnoTpt16HZCSPKN-cNibxAZbNDgMiGaIV8uIaDr9iHnZ1O"/>
+</div>
+<p class="text-xs font-black text-center truncate">Behala Nutan Dal</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Barisha Club" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp-BI-iWfy3o-7rZ5-Wbn46SQIr9Xe3j3finqXS3DcdSNHFukG9YdUp4iDy0Pn54E_io7NoDP1Nj0tx9-ej2C5Z--g-Y_a2KDSxS0tx_tyJztoBOI558FbqRoNJ6KYWd5eAY-evNU2Z7ragySIemoi49cVTENp8ZWgKifQ4K9qP3i9vJ2Pq4FYLKcQAxpavEoBbhnru9uNOYFskFzvldctR59_GrTsSEuBHipZPK1IcDMKzNwC0Mz1S3r0_ha0Nz8slc9nY72n7l4A"/>
+</div>
+<p class="text-xs font-black text-center truncate">Barisha Club</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Naktala Udayan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ1vKFI1FZMkjo-DIUFAGrjS-4lT554KsWY63I26gvBHjnASr16jCLFIGJkZ2joXPatkjD5A3zzZeREiz708Ke_RC8LoaCzG3j_dn5UGsCZHG9m4HzqT35cZcxyoT0ZxmeZgvnBoDR2aRZrTS0prwBr8Vw8z0Dc7irHERkM0AmT3OJU_lgSYNblD3ZRcX1-4v_WVPBq9Dnb4Ag9IMEk0E17j-L-dp0fAA_sA9rc4SEz2tFuyRhnoi8h5_RPCJBUOaKPt7we2hlu3im"/>
+</div>
+<p class="text-xs font-black text-center truncate">Naktala Udayan</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Ajad Hind Sangha" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoEXylV_Lo3r3QdRo0ZDGK5eMFHf8SVUeaFnPq8wq9HvuBV3Vd4wsq2gPsE1XTonw1LRUuHP7zmPmS6wlAoOk2s7UUSSjnrcdO5n2tc1jxtIAyOIStDOBzoM7MUO9eWRr07xS8FYtYKI9KruK165tH5QXdsXzNS5ZC2mXXTcoMi7_W-l_ass6EPY_Kr3gD3_yRqj7_LTr51LAa8Ar3p2-1JZoJjm0M6g4QbWGX-vZgUofGOgh_BYsfXwgr6Ri3lcnUdVlC8Z_8pFtp"/>
+</div>
+<p class="text-xs font-black text-center truncate">Ajad Hind Sangha</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Santoshpur Lake" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPhsWIVnuvAKwdCwPcHVA8odKhD6-B-Ev0gHXdLyLQiavb22zSxVBX5e1RZnipTdS-mfY9hSwko7R5VgMPmVRqVCXu8VQEwfS_wxQvSlnyC43LqlrDvgLliuSTbvqi637Q-5573gtbO3BH5glrxBLyfNnI3pejrNPKTN76I8W8l2iD89F_WdFhOFbZOu9nRpjkG9xrRoYk9QAXChaCwbVCpHKO_8hlaoB2zTCcN4z4XAYPuG08gFjxQFXKW_nk75n4Nzg8cY6dFxPM"/>
+</div>
+<p class="text-xs font-black text-center truncate">Santoshpur Lake</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Hindustan Park" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq_XI5y7jjk3FxAqjYAEqx-JMi6J5efF32O_XqmT-fDrKpdaKwQl_ntpRRU5Oey-LZlV-dWrClthmeQZxB1omgy6sdwOuwMvhG7zAvHFasBwAE92v3HN6RNnDTXoAGGo4hzyaCkbPzRa-bYmRTR9Fr23fIqgCRyoZdzDhqehGKx8LljupZdZWZZcd84OGO2TZqOm-eS38GwGFW0pLW_QGVlS7EIIIf7xWNjItzyzau3OM06-oeiaifcHZPGHxdeT82xGVGzOdV0nif"/>
+</div>
+<p class="text-xs font-black text-center truncate">Hindustan Park</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Ballygunge Cultural" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Rz3ccqb5aG1UJZUJ-ou_B8mx7XYrvsZcl5p0JNsjawzWtQrbCemSO533FIaYtCtVM2LmKC1r87rpkC8zi0bj-lancxIX6omjO14_iLxnaW7FBZoimEr5OF3PAx7FP2-pfN-CZUJdn6bRnyBe14c_R3sstmSci5JzQ--gJ4ybd9zOArilegEHUN29YNaJDy7FJtmQax2kLsg8Ib1q1voMqo7YEdEF1RyQ-hykk3oAcrGqsmy4H_mSPNd91rhUAVHxXfHe27w-4X9D"/>
+</div>
+<p class="text-xs font-black text-center truncate">Ballygunge Cultural</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Babubagan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZzB_k1pwz7N2J45rIEaIhZTcXTdTe7U-7yUwL4SxdWAp1VWbT7Ev9zogxHLYNF4qp3nHPb6tUieWCNy3uBGSFDYTTB5TrUib3nncN02yZkoP9aH81sb90iXMnUsNFS6HEG-4UojRnbqP3WIJl8yqgToQYn2pSbZbQoTgSJgQRtazm6DxOBt8vZ2mKLwMo5DOP06wn4N2YJ7VsLk2F-yvgAGAbYH3FHjt33jMEiZkcf0Jh8wW-ukLBVVcO5ViCyaRtR3Zt_MMUOE9H"/>
+</div>
+<p class="text-xs font-black text-center truncate">Babubagan</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Jodhpur Park" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZgXtspVEVbIfZ0c1_0b0NX-lzAWbUT05-W3ugxicujRiitB0vXcHQ0IkYEtaNvmRcfxd9I3jr37z6At2yDd1pGtozkyukZEU_37I31Ewu4Ep6BWleJpubhihsN3Qyvg3x4WkvkrOA9ihjvHlDhQ7lAs7cuH7B4D17VuGn31z6jidWVFoczm7BhRi1r1mtPPsLeRH7Zrnb0HWo3YmQgVQCsJHX7G2HTwJCPrY26pL42IX0VuZsxCIYDOegotOP47rWLs-GlL8J4Vtf"/>
+</div>
+<p class="text-xs font-black text-center truncate">Jodhpur Park</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Kidderpore" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9S-EqMhgZ5HVna7XrIB9mefBhjqRDwOu3HGJaYIuwWpjGh4dzxeTmkD2sTyW0KxQaVv6npP_XytRk4T61Lrlsl4stPxGMfsmEUcMq77m0OTvRdY_4N2lx5VOnWf-BQxWEtToAaNCxHztAmdGGcDH6NlynVZLY4U2KTROgAhnwyrqpABmAglQdQmNa-oWPTYE4SfPlR3hlLrd3KkyJCkrlYsxYccOTu-at9a36rdG4OYRCzBb4d_BylcJgNaGkOJJFf9RK-rW4Dbcz"/>
+</div>
+<p class="text-xs font-black text-center truncate">Kidderpore Star</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Alipore" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1VIH6uSOSJwf8tRF0J890gyDUxuDarRQ-SIVC2ZmXm7LLKkIoGPQZCqXy9tKojuLnl2Hihp0ritsWteJSQzWbSt61XaIOOaMt1N9YwBBq6GE0SQi1pVTdTjBcYcJmQSDwbwMCK8h3gjr_PEA_chEx3GR6kNNubj0tMt4RvxN7dVnqs9onbhiH79hb3GJTJgSPkKosQ-QifHix1T4ndJ__odSE3euwIvbXbIxxsFoR-i9cFboieiQKrumEM1nX7h2rZ1wa6nKBbsa"/>
+</div>
+<p class="text-xs font-black text-center truncate">Alipore Sarbojanin</p>
+</div>
+<div onclick="window.location.href='pandal-detail.html'" class="group cursor-pointer">
+<div class="aspect-square rounded-3xl overflow-hidden mb-3 ring-2 ring-transparent group-hover:ring-primary transition-all">
+<img alt="Chetla Agrani" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGWYNQqbmLMMVMRDT6iqUcNSLvVQft-1EtqRb6kphemP9oC1YuvzvNTe5hOzoSkoyQ3aK3lExTvR2KcE0V0SXd8FWJOjl8uCtyteVB6dK47SOP403KNy1L1ywaNClcxs_ZtnIVfpDduuWGnFeqpk3UGZJH97czmkI0Nu2x5o3KiLFGwWKn7WNwSORLsNIGE-qDEvQEbIbP36PemJAMaQ4b6fA4_1shhLRXgRt1AuZDDDANpQ6K_kCFcSP9WLVn3Rgbo9WpXjFBn-Ng"/>
+</div>
+<p class="text-xs font-black text-center truncate">Chetla Agrani</p>
+</div>
+</div>
+</section>
+<!-- The Legacy Tour -->
+<section>
+<div class="bg-surface-container-low rounded-[4rem] p-16 border border-secondary/10 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-5 pointer-events-none transform translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[500px]" data-icon="history_edu">history_edu</span>
+</div>
+<div class="flex-1 space-y-8 relative z-10">
+<div class="inline-block px-6 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-black uppercase tracking-widest shadow-sm">Heritage Since 1757</div>
+<h3 class="font-headline text-6xl font-black text-on-surface">The Legacy Tour</h3>
+<p class="text-on-surface-variant leading-relaxed text-xl max-w-xl">Step back in time to the 'Bonedi Bari' (aristocratic households). Witness the rituals that have remained unchanged for centuries in the grand courtyards of North Kolkata's royalty.</p>
+<button class="bg-secondary text-on-secondary px-12 py-5 rounded-[2rem] font-black text-lg shadow-2xl shadow-secondary/20 hover:scale-105 transition-transform">Explore Legacy Directory</button>
+</div>
+<div class="flex-1 w-full relative group">
+<div class="rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl relative">
+<img alt="Sobhabazar Rajbari" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa9mM_35m3ZCMVLotJJhuMAX3lxVm0sDp0032TiavpmsmsDEW9PZE-mJlRTfiRPsQKKI1VT4gzLImV5A49G2H3YThntycfCRMu-XVymqq8YAGnpWpSRZyIqirfnikP_wYjVTc8FHv0rGuRucIF3k66rrh-trOKHwuawfato62zanM678ggS8nD-xzAY5OhnJ0Mn73eDV_WVwFReKwStBCSQhou4IuyOXb4cqlHQ-hFFyZ-STqsuoHoFZWVrQZyUJuSMSjF4URCRuNu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-10">
+<p class="text-white font-headline text-3xl font-black">Sobhabazar Rajbari</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-4 bg-[#FDF9F0] border-t border-[#e6e2d9]/30">
+<a class="flex flex-col items-center justify-center text-[#1c1c17]/40 px-6 py-2 hover:text-[#af101a] transition-colors" href="main.html">
+<span class="material-symbols-outlined mb-1 text-2xl" data-icon="home">home</span>
+<span class="font-body font-bold text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#af101a] bg-[#af101a]/10 rounded-2xl px-6 py-2 transition-all duration-300" href="explore.html">
+<span class="material-symbols-outlined mb-1 text-2xl" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-body font-bold text-[10px] uppercase tracking-wider">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c17]/40 px-6 py-2 hover:text-[#af101a] transition-colors" href="saved.html">
+<span class="material-symbols-outlined mb-1 text-2xl" data-icon="bookmark">bookmark</span>
+<span class="font-body font-bold text-[10px] uppercase tracking-wider">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c17]/40 px-6 py-2 hover:text-[#af101a] transition-colors" href="profile.html">
+<span class="material-symbols-outlined mb-1 text-2xl" data-icon="person">person</span>
+<span class="font-body font-bold text-[10px] uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="pt-24 pb-48 flex flex-col items-center gap-10 bg-surface-container-low border-t border-outline-variant/10">
+<div class="flex flex-col items-center gap-4 text-center px-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="temple_hindu">temple_hindu</span>
+<h1 class="font-headline font-black italic text-primary text-3xl tracking-tight">Pandal Hopper 2026</h1>
+</div>
+<p class="text-on-surface-variant text-sm max-w-md">The definitive guide to the world's largest public art festival. Curating 3,000+ celebrations across the City of Joy.</p>
+</div>
+<div class="flex gap-6">
+<a class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-md" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+<a class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-md" href="#"><span class="material-symbols-outlined" data-icon="public">public</span></a>
+<a class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-md" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+<nav class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] font-black text-on-surface uppercase tracking-[0.2em] py-8 w-full max-w-2xl border-y border-outline-variant/20 px-6">
+<a class="hover:text-primary transition-colors" href="#">Directory</a>
+<a class="hover:text-primary transition-colors" href="#">Heritage Guide</a>
+<a class="hover:text-primary transition-colors" href="#">Map</a>
+<a class="hover:text-primary transition-colors" href="#">Wait Times</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<p class="text-center text-[10px] text-on-surface-variant/60 font-black uppercase tracking-widest">© 2026 Pandal Hopper. Built with devotion in Kolkata.</p>
+</footer>
+</body></html> ai page gulo firebase a update korle to hoye jabe app na akhono thik korte hobe backend a kaj baki ache jani ami and offilne location tar bepare ektu bolo and ei web k app e banate gele pwa chere r ki kono upai ache
